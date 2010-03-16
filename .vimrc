@@ -1,8 +1,15 @@
-
 " Git rebase helper for:
 "   git rebase --interactive
 "
-"   Cornelius <cornelius.howl@gmail.com>
+"   L   - view commit log
+"   p   - pick
+"   e   - edit
+"   s   - squash
+"   r   - reword
+"   D   - delete
+"
+"       Cornelius <cornelius.howl@gmail.com>
+
 fun! RebaseLog()
   let line = getline('.')
   let hash = matchstr(line,'\(^\w\+\s\)\@<=\w*')
