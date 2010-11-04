@@ -33,6 +33,6 @@ fun! g:initGitRebase()
   nmap <silent><buffer> s :cal RebaseAction('squash')<CR>
   nmap <silent><buffer> e :cal RebaseAction('edit')<CR>
   nmap <silent><buffer> r :cal RebaseAction('reword')<CR>
-  nmap <silent><buffer> d dd
+  nmap <silent><buffer> D dd
 endf
 autocmd filetype gitrebase :cal g:initGitRebase()
