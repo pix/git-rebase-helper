@@ -4,6 +4,7 @@
 "   L   - view commit log
 "   p   - pick
 "   e   - edit
+"   f   - fixup
 "   s   - squash
 "   r   - reword
 "   D   - delete
@@ -30,8 +31,9 @@ endf
 fun! g:initGitRebase()
   nmap <silent><buffer> L :cal RebaseLog()<CR>
   nmap <silent><buffer> p :cal RebaseAction('pick')<CR>
-  nmap <silent><buffer> s :cal RebaseAction('squash')<CR>
   nmap <silent><buffer> e :cal RebaseAction('edit')<CR>
+  nmap <silent><buffer> f :cal RebaseAction('fixup')<CR>
+  nmap <silent><buffer> s :cal RebaseAction('squash')<CR>
   nmap <silent><buffer> r :cal RebaseAction('reword')<CR>
   nmap <silent><buffer> D dd
 endf
